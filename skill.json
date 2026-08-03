@@ -1,0 +1,34 @@
+{
+  "name": "genpark-mobile-terminal-coding-assistant-gateway-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Mobile terminal gateway for remote coding agent task monitoring & execution status.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "mobile-terminal",
+    "coding-gateway",
+    "agent-monitor",
+    "ph-august2026"
+  ],
+  "inputs": {
+    "active_agent_task_id": {
+      "type": "string"
+    },
+    "mobile_device_id": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "task_status": {
+      "type": "string"
+    },
+    "progress_percentage": {
+      "type": "number"
+    },
+    "live_terminal_summary": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
